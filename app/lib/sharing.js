@@ -15,6 +15,15 @@ export function openInBrowser (hashes) {
 }
 
 /**
+ * Open BlockMed file register page in a browser
+ * @param {string[]} hashes
+ */
+export function registerOnBlockMed (hash, byteSize, category) {
+  shell.openExternal(`http://ipfs.blcksync.info:3000/file-register-bridge?hashId=${hash}&fileSize=${byteSize}&category=${category}`)
+  return Promise.resolve(hash)
+}
+
+/**
  * Constructs a shareable url with the gateway from settings or the default one
  *
  * @param {string} hash
