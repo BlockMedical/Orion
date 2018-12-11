@@ -342,6 +342,7 @@ export function getObjectStat (objectMultiHash) {
       stat.BlockSize = byteSize(stat.BlockSize)
       stat.LinksSize = byteSize(stat.LinksSize)
       stat.DataSize = byteSize(stat.DataSize)
+      stat.ByteSize = stat.CumulativeSize
       stat.CumulativeSize = byteSize(stat.CumulativeSize)
       return Promise.resolve(stat)
     })
