@@ -6,7 +6,7 @@ import { Icon } from 'react-photonkit'
 import { saveFileToPath, publishToIPNS } from '../../../api'
 
 import { proptAndRemoveObjects } from '../fileIntegration'
-import { shareMenuTemplate, openInBrowser } from '../../../lib/sharing'
+import { shareMenuTemplate, openInBrowser, registerOnBlockMed } from '../../../lib/sharing'
 
 import DetailsWindow from '../../Details/window'
 import formatElement from '../../../util/format-element'
@@ -22,6 +22,20 @@ class StorageElement extends React.Component {
         label: 'Open in browser',
         click: (item) => {
           openInBrowser([this.props.element.hash])
+        }
+      },
+      {
+        label: 'Register Data on BlockMed',
+        click: (item) => {
+          console.log(this.props.element);
+          registerOnBlockMed(this.props.element.hash, this.props.element.stat.ByteSize, 'data')
+        }
+      },
+      {
+        label: 'Register Code on BlockMed',
+        click: (item) => {
+          console.log(this.props.element);
+          registerOnBlockMed(this.props.element.hash, this.props.element.stat.ByteSize, 'code')
         }
       },
       {
