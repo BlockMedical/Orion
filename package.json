@@ -1,10 +1,10 @@
 {
-  "name": "Orion",
-  "version": "0.9.1-master",
-  "env": "development",
+  "name": "Orion-BlockMed",
+  "version": "0.9.1",
+  "env": "release",
   "ipfsVersion": "v0.4.17",
   "ipfsRepoMigrationsVersion": "v1.4.0",
-  "statsToken": "9d407c14d888a212cf04c397a95acb7b",
+  "statsToken": "bcd802fa2e699f85cc19e1ff6079e3c7",
   "description": "Siderus Orion is an easy-to-use IPFS desktop client",
   "main": "app/entry.js",
   "scripts": {
