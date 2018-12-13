@@ -5,7 +5,7 @@
   "ipfsVersion": "v0.4.17",
   "ipfsRepoMigrationsVersion": "v1.4.0",
   "statsToken": "bcd802fa2e699f85cc19e1ff6079e3c7",
-  "description": "Siderus Orion is an easy-to-use IPFS desktop client",
+  "description": "Orion-BlockMed is an easy-to-use IPFS desktop client with BlockMed register integration.",
   "main": "app/entry.js",
   "scripts": {
     "test": "jest",
@@ -20,11 +20,12 @@
     "file",
     "p2p",
     "sharing",
-    "siderus"
+    "siderus",
+    "blockmed"
   ],
   "author": {
-    "name": "Siderus OU",
-    "email": "hello@siderus.io"
+    "name": "Joe Wu",
+    "email": "jw@blockmed.ai"
   },
   "license": "GPL-3.0",
   "devDependencies": {
