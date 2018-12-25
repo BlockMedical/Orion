@@ -88,10 +88,10 @@
     "publish": [
       {
         "provider": "generic",
-        "url": "https://get.siderus.io/orion"
+        "url": "https://download.blockmed.ai/orion"
       }
     ],
-    "appId": "io.siderus.orion",
+    "appId": "ai.blockmed.orion",
     "files": [
       "app/**/*",
       "docs/**",
@@ -111,6 +111,9 @@
       ]
     },
     "mac": {
+      "category": "public.app-category.utilities",
+      "identity": "Wireless Medical Monitoring Inc.",
+      "type": "distribution",
       "icon": "build/logo.icns",
       "target": [
         "zip"
