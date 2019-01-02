@@ -112,7 +112,6 @@
     },
     "mac": {
       "category": "public.app-category.utilities",
-      "identity": "Wireless Medical Monitoring Inc.",
       "type": "distribution",
       "icon": "build/logo.icns",
       "target": [
