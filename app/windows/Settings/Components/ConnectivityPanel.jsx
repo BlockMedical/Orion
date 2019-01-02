@@ -21,7 +21,7 @@ const isMac = process.platform === 'darwin'
 @observer
 class ConnectivityPanel extends React.Component {
   state = {
-    gateway: GatewayEnum.SIDERUS,
+    gateway: GatewayEnum.CLOUDFLARE,
     skipGatewayQuery: true,
     runInBackground: true,
     disablePubSubIPNS: false,
