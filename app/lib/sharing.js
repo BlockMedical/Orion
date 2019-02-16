@@ -19,7 +19,7 @@ export function openInBrowser (hashes) {
  * @param {string[]} hashes
  */
 export function registerOnBlockMed (hash, byteSize, category) {
-  shell.openExternal(`https://ipfs.blockmed.ai.info/file-register-bridge?hashId=${hash}&fileSize=${byteSize}&category=${category}`)
+  shell.openExternal(`https://ipfs.blockmed.ai/file-register-bridge?hashId=${hash}&fileSize=${byteSize}&category=${category}`)
   return Promise.resolve(hash)
 }
 
